@@ -14,9 +14,9 @@ function NewTodoForm(props) {
     }
 
     return (
-        <div class='mt-5'>
+        <div className='mt-5'>
             <form>
-                <div class='mb-3'>
+                <div className='mb-3'>
                     <label className='form-label'>Assigned</label>
                     <input 
                         type='text'
