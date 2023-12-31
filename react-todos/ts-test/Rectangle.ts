@@ -2,6 +2,10 @@ import { Shape } from './Shape';
 
 export class Reactangle extends Shape {
 
+    calculateArea(): number {
+        return this._length * this._width;
+    }
+
     constructor(theX: number, theY: number, 
                 private _width: number, private _length: number) {
         super(theX, theY);
@@ -23,4 +27,6 @@ export class Reactangle extends Shape {
     getInfo(): string {
         return super.getInfo() + `, width=${this._width}, length=${this._length}`;
     }
+
+
 }
